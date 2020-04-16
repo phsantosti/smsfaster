@@ -1,3 +1,15 @@
+<!DOCTYPE resources [
+    <!ENTITY max "160">
+]>
 <resources>
     <string name="app_name">SMS Faster</string>
+    <string name="hint_ddi">DDI</string>
+    <string name="hint_ddd">DDD</string>
+    <string name="hint_number">Número</string>
+    <string name="hint_message">Mensagem</string>
+    <string name="description_clean">Limpar campo de mensagem</string>
+    <string name="label_send">Enviar SMS</string>
+    <string name="label_counter">0 / &max;</string>
+    <string name="sms_sent_successfully">Mensagem enviada com sucesso!</string>
+    <string name="sms_error">Mensagem não enviada. Verifique se todos os campos foram preenchidos corretamente.</string>
 </resources>
