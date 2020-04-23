@@ -8,7 +8,7 @@
     tools:context=".MainActivity">
 
     <EditText
-        android:id="@+id/et_ddi"
+        android:id="@+id/edit_text_ddi"
         android:layout_width="60dp"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
@@ -21,19 +21,20 @@
         android:inputType="number"
         android:maxLength="2"
         android:paddingBottom="8dp"
-        android:paddingTop="8dp" />
+        android:paddingTop="8dp"
+        android:autofillHints="" />
 
     <EditText
-        android:id="@+id/et_ddd"
+        android:id="@+id/edit_text_ddd"
         android:layout_width="60dp"
         android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/et_ddi"
+        android:layout_alignTop="@+id/edit_text_ddi"
         android:layout_marginEnd="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
-        android:layout_toEndOf="@+id/et_ddi"
-        android:layout_toRightOf="@+id/et_ddi"
+        android:layout_toEndOf="@+id/edit_text_ddi"
+        android:layout_toRightOf="@+id/edit_text_ddi"
         android:background="@drawable/field_radius"
         android:gravity="center"
         android:hint="@string/hint_ddd"
@@ -41,7 +42,8 @@
         android:inputType="number"
         android:maxLength="2"
         android:paddingBottom="8dp"
-        android:paddingTop="8dp" />
+        android:paddingTop="8dp"
+        android:autofillHints="" />
 
     <EditText
         android:id="@+id/et_number"
@@ -49,9 +51,9 @@
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
-        android:layout_alignTop="@+id/et_ddi"
-        android:layout_toEndOf="@+id/et_ddd"
-        android:layout_toRightOf="@+id/et_ddd"
+        android:layout_alignTop="@+id/edit_text_ddi"
+        android:layout_toEndOf="@+id/edit_text_ddd"
+        android:layout_toRightOf="@+id/edit_text_ddd"
         android:background="@drawable/field_radius"
         android:hint="@string/hint_number"
         android:imeOptions="actionNext"
@@ -59,18 +61,19 @@
         android:paddingBottom="8dp"
         android:paddingLeft="12dp"
         android:paddingRight="12dp"
-        android:paddingTop="8dp" />
+        android:paddingTop="8dp"
+        android:autofillHints="" />
 
     <EditText
-        android:id="@+id/et_message"
+        android:id="@+id/edit_text_message"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/tv_counter"
+        android:layout_above="@+id/text_view_counter"
         android:layout_alignParentEnd="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentStart="true"
-        android:layout_below="@+id/et_ddi"
+        android:layout_below="@+id/edit_text_ddi"
         android:layout_marginTop="8dp"
         android:background="@drawable/field_radius"
         android:gravity="start"
@@ -82,13 +85,14 @@
         android:paddingLeft="12dp"
         android:paddingRight="12dp"
         android:paddingTop="8dp"
-        android:scrollbars="vertical" />
+        android:scrollbars="vertical"
+        android:autofillHints="" />
 
     <TextView
-        android:id="@+id/tv_counter"
+        android:id="@+id/text_view_counter"
         android:layout_width="wrap_content"
         android:layout_height="27dp"
-        android:layout_above="@+id/ib_clean"
+        android:layout_above="@+id/image_button_clean"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_marginBottom="8dp"
@@ -103,7 +107,7 @@
         android:textStyle="bold" />
 
     <ImageButton
-        android:id="@+id/ib_clean"
+        android:id="@+id/image_button_clean"
         android:layout_width="46dp"
         android:layout_height="46dp"
         android:layout_alignParentBottom="true"
@@ -122,8 +126,8 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
-        android:layout_toEndOf="@+id/ib_clean"
-        android:layout_toRightOf="@+id/ib_clean"
+        android:layout_toEndOf="@+id/image_button_clean"
+        android:layout_toRightOf="@+id/image_button_clean"
         android:background="@drawable/button_radius_orange"
         android:gravity="center"
         android:onClick="sendSMS"
