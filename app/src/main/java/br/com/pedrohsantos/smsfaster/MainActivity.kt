@@ -47,10 +47,14 @@ class MainActivity : AppCompatActivity(), TextWatcher {
 
             val SMSManager: SmsManager = SmsManager.getDefault()
             SMSManager.sendTextMessage(number, null, message, null, null)
-            Toast.makeText(this, R.string.sms_sent_successfully, Toast.LENGTH_LONG).show()
+            this.toast(R.string.sms_sent_successfully)
         }catch (ex: Exception){
             ex.printStackTrace()
-            Toast.makeText(this, R.string.sms_error, Toast.LENGTH_LONG).show()
+            this.toast(R.string.sms_error)
         }
+    }
+
+    private fun toast(messageId: Int){
+        Toast.makeText(this, getString(messageId), Toast.LENGTH_LONG).show()
     }
 }
